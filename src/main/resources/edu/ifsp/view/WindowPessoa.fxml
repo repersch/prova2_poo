@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="394.0" prefWidth="444.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ifsp.controller.ControllerPessoa">
+   <children>
+      <Label fx:id="lbNome" layoutX="94.0" layoutY="63.0" text="Nome: " />
+      <Label fx:id="lbGrupo" layoutX="93.0" layoutY="25.0" text="Grupo: " />
+      <Label fx:id="lbDataNascimento" layoutX="21.0" layoutY="102.0" text="Data de nascimento:" />
+      <Label fx:id="lbSexo" layoutX="100.0" layoutY="139.0" text="Sexo:" />
+      <CheckBox fx:id="ckAmigo" layoutX="345.0" layoutY="25.0" mnemonicParsing="false" onAction="#configurarCoisaPreferida" text="Amigo" />
+      <Label fx:id="lbCoisaPreferida" layoutX="45.0" layoutY="296.0" text="Coisa preferida:" />
+      <ChoiceBox fx:id="cbGrupo" layoutX="146.0" layoutY="21.0" prefHeight="25.0" prefWidth="174.0" />
+      <DatePicker fx:id="dpDataNascimento" layoutX="146.0" layoutY="98.0" prefHeight="25.0" prefWidth="259.0" />
+      <RadioButton fx:id="rbFeminino" layoutX="146.0" layoutY="139.0" mnemonicParsing="false" selected="true" text="Feminino">
+         <toggleGroup>
+            <ToggleGroup fx:id="sexo" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rbMasculino" layoutX="237.0" layoutY="139.0" mnemonicParsing="false" text="Masculino" toggleGroup="$sexo" />
+      <TextField fx:id="txtNome" layoutX="146.0" layoutY="59.0" prefHeight="25.0" prefWidth="259.0" />
+      <TextField fx:id="txtCoisaPreferida" layoutX="148.0" layoutY="292.0" prefHeight="25.0" prefWidth="259.0" />
+      <Button fx:id="btnVoltar" layoutX="338.0" layoutY="341.0" mnemonicParsing="false" onAction="#voltar" prefWidth="67.0" text="Voltar" />
+      <Button fx:id="btnSalvar" layoutX="260.0" layoutY="341.0" mnemonicParsing="false" onAction="#salvaOuAtualizaPessoa" prefWidth="67.0" text="Salvar" />
+      <Label fx:id="lbRua" layoutX="103.0" layoutY="178.0" text="Rua:" />
+      <TextField fx:id="txtRua" layoutX="148.0" layoutY="174.0" prefHeight="25.0" prefWidth="259.0" />
+      <TextField fx:id="txtBairro" layoutX="148.0" layoutY="214.0" />
+      <Label fx:id="lbBairro" layoutX="96.0" layoutY="218.0" text="Bairro:" />
+      <Label fx:id="lbNumero" layoutX="306.0" layoutY="218.0" text="Número:" />
+      <Label fx:id="lbCidade" layoutX="88.0" layoutY="257.0" text="Cidade:" />
+      <TextField fx:id="txtCidade" layoutX="148.0" layoutY="253.0" prefHeight="25.0" prefWidth="149.0" />
+      <TextField fx:id="txtNumero" layoutX="360.0" layoutY="214.0" prefHeight="25.0" prefWidth="47.0" />
+      <Label fx:id="lbEstado" layoutX="312.0" layoutY="257.0" text="Estado:" />
+      <TextField fx:id="txtEstado" layoutX="360.0" layoutY="253.0" prefHeight="25.0" prefWidth="47.0" />
+   </children>
+</AnchorPane>

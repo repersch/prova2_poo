@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="400.0" maxWidth="600.0" minHeight="400.0" minWidth="600.0" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="edu.ifsp.controller.ControllerPrincipal">
+   <children>
+      <TableView fx:id="tableView" layoutX="14.0" layoutY="66.0" onMouseClicked="#mostrarCoisaPreferida" prefHeight="200.0" prefWidth="573.0">
+        <columns>
+          <TableColumn fx:id="cGrupo" prefWidth="125.0" text="Grupo" />
+          <TableColumn fx:id="cNome" minWidth="0.0" prefWidth="235.0" text="Nome" />
+          <TableColumn fx:id="cNascimento" prefWidth="119.0" text="Data Nascimento" />
+          <TableColumn fx:id="cSexo" prefWidth="93.0" text="Sexo" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtFiltrar" layoutX="438.0" layoutY="28.0" promptText="Filtrar" />
+      <Button fx:id="btnAdicionar" layoutX="205.0" layoutY="333.0" mnemonicParsing="false" onAction="#addPessoa" prefHeight="39.0" prefWidth="87.0" text="Adicionar" />
+      <Button fx:id="btnGerenciarGrupo" layoutX="14.0" layoutY="333.0" mnemonicParsing="false" onAction="#gerenciarGrupo" prefHeight="39.0" prefWidth="108.0" text="Gerenciar Grupo" />
+      <Label fx:id="lbCoisaPreferida" layoutX="20.0" layoutY="287.0" prefHeight="17.0" prefWidth="561.0" />
+      <Button fx:id="btnExcluir" layoutX="500.0" layoutY="333.0" mnemonicParsing="false" onAction="#excluirPessoa" prefHeight="39.0" prefWidth="87.0" text="Excluir" />
+      <Button fx:id="btnVisualizar" layoutX="402.0" layoutY="333.0" mnemonicParsing="false" onAction="#visualizarPessoa" prefHeight="39.0" prefWidth="87.0" text="Visualizar" />
+      <Button fx:id="btnEditar" layoutX="304.0" layoutY="333.0" mnemonicParsing="false" onAction="#editarPessoa" prefHeight="39.0" prefWidth="87.0" text="Editar" />
+   </children>
+</AnchorPane>
